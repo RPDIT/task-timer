@@ -1,0 +1,24 @@
+{
+  "type": "module",
+  "name": "task-timer",
+  "version": "1.0.0",
+  "description": "A tool to track the time spent on tasks. ",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --watch index.js"
+  },
+  "author": "RPDoherty.IT@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0",
+    "mongoose": "^8.12.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.2"
+  }
+}
