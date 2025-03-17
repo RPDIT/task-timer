@@ -7,7 +7,6 @@ const app = express();
 
 
 // import routes
-import testRoutes from "./routes/routetest.js";
 import taskRoutes from "./routes/task.js";
 
 
@@ -54,7 +53,6 @@ function addRoutes(){
         res.send(true);
     });
     app.use('/api', taskRoutes);
-    app.use('test', testRoutes);
 };
 
 function middleWearHandler(to_set, to_mount) { // takes two arrays, first objects to set, second functions to mount. 
@@ -80,7 +78,6 @@ function main(){
             console.log(`Server listening at http://localhost:${process.env.API_PORT}`)
             connectDb(process.env.API_KEY);
         })
-        console.log(new Date(this.end_time).getTime());
    };
     return app;
 };
